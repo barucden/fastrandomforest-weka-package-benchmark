@@ -65,8 +65,8 @@ public class FastRandomForestBenchmark {
         }
     }
 
-    private static final int TRAINING_SIZE = 10_000;
-    private static final int TESTING_SIZE = 3_000_000;
+    private static final int TRAINING_SIZE = 1_000_000;
+    private static final int TESTING_SIZE = 5_000_000;
 
     private Instances testData;
     private FastRandomForest trainedModel;
