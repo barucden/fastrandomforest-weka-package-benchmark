@@ -51,7 +51,7 @@ import java.util.logging.LogManager;
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Benchmark)
 @Warmup(iterations = 1)
-@Measurement(iterations = 2)
+@Measurement(iterations = 10)
 @Fork(value = 1)
 public class FastRandomForestBenchmark {
 
