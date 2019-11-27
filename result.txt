@@ -1,0 +1,174 @@
+Cloning the loop version source...
+Building the loop version...
+Building the recursive version benchmark...
+Building the loop version benchmark...
+Benchmarking the recursive version...
+# JMH version: 1.22
+# VM version: JDK 1.8.0_232, OpenJDK 64-Bit Server VM, 25.232-b09
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.NumericDatasetBenchmark.run
+
+# Run progress: 0.00% complete, ETA 00:01:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 106803.276 ms/op
+Iteration   1: 106091.099 ms/op
+Iteration   2: 111457.200 ms/op
+Iteration   3: 103614.588 ms/op
+Iteration   4: 101240.356 ms/op
+Iteration   5: 101726.888 ms/op
+Iteration   6: 101301.478 ms/op
+Iteration   7: 102409.805 ms/op
+Iteration   8: 101434.136 ms/op
+Iteration   9: 102293.651 ms/op
+Iteration  10: 99907.374 ms/op
+
+
+Result "org.sample.NumericDatasetBenchmark.run":
+  103147.658 ±(99.9%) 5082.292 ms/op [Average]
+  (min, avg, max) = (99907.374, 103147.658, 111457.200), stdev = 3361.621
+  CI (99.9%): [98065.366, 108229.949] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:20:38
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                    Mode  Cnt       Score      Error  Units
+NumericDatasetBenchmark.run  avgt   10  103147.658 ± 5082.292  ms/op
+# JMH version: 1.22
+# VM version: JDK 1.8.0_232, OpenJDK 64-Bit Server VM, 25.232-b09
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.NominalDatasetBenchmark.run
+
+# Run progress: 0.00% complete, ETA 00:01:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 1072.079 ms/op
+Iteration   1: 1031.045 ms/op
+Iteration   2: 1034.153 ms/op
+Iteration   3: 1037.504 ms/op
+Iteration   4: 1023.406 ms/op
+Iteration   5: 1037.182 ms/op
+Iteration   6: 1022.536 ms/op
+Iteration   7: 1032.602 ms/op
+Iteration   8: 1030.428 ms/op
+Iteration   9: 1028.048 ms/op
+Iteration  10: 1034.576 ms/op
+
+
+Result "org.sample.NominalDatasetBenchmark.run":
+  1031.148 ±(99.9%) 7.871 ms/op [Average]
+  (min, avg, max) = (1022.536, 1031.148, 1037.504), stdev = 5.206
+  CI (99.9%): [1023.277, 1039.019] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:03
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                    Mode  Cnt     Score   Error  Units
+NominalDatasetBenchmark.run  avgt   10  1031.148 ± 7.871  ms/op
+Benchmarking the loop version...
+# JMH version: 1.22
+# VM version: JDK 1.8.0_232, OpenJDK 64-Bit Server VM, 25.232-b09
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.NumericDatasetBenchmark.run
+
+# Run progress: 0.00% complete, ETA 00:01:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 86290.357 ms/op
+Iteration   1: 83326.118 ms/op
+Iteration   2: 82586.171 ms/op
+Iteration   3: 88299.595 ms/op
+Iteration   4: 89156.997 ms/op
+Iteration   5: 91463.275 ms/op
+Iteration   6: 91360.434 ms/op
+Iteration   7: 90153.905 ms/op
+Iteration   8: 89142.520 ms/op
+Iteration   9: 89132.801 ms/op
+Iteration  10: 89045.191 ms/op
+
+
+Result "org.sample.NumericDatasetBenchmark.run":
+  88366.701 ±(99.9%) 4586.951 ms/op [Average]
+  (min, avg, max) = (82586.171, 88366.701, 91463.275), stdev = 3033.984
+  CI (99.9%): [83779.749, 92953.652] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:17:31
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                    Mode  Cnt      Score      Error  Units
+NumericDatasetBenchmark.run  avgt   10  88366.701 ± 4586.951  ms/op
+# JMH version: 1.22
+# VM version: JDK 1.8.0_232, OpenJDK 64-Bit Server VM, 25.232-b09
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 10 s each
+# Measurement: 10 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.sample.NominalDatasetBenchmark.run
+
+# Run progress: 0.00% complete, ETA 00:01:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 755.261 ms/op
+Iteration   1: 726.304 ms/op
+Iteration   2: 717.236 ms/op
+Iteration   3: 727.556 ms/op
+Iteration   4: 728.002 ms/op
+Iteration   5: 728.586 ms/op
+Iteration   6: 728.680 ms/op
+Iteration   7: 727.672 ms/op
+Iteration   8: 727.170 ms/op
+Iteration   9: 728.135 ms/op
+Iteration  10: 727.791 ms/op
+
+
+Result "org.sample.NominalDatasetBenchmark.run":
+  726.713 ±(99.9%) 5.140 ms/op [Average]
+  (min, avg, max) = (717.236, 726.713, 728.680), stdev = 3.400
+  CI (99.9%): [721.573, 731.854] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:02:02
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                    Mode  Cnt    Score   Error  Units
+NominalDatasetBenchmark.run  avgt   10  726.713 ± 5.140  ms/op
