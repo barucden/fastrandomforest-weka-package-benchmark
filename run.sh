@@ -11,6 +11,8 @@ echo "Building the loop version benchmark..."
 mvn -q -f loop-version/ package
 
 echo "Benchmarking the recursive version..."
-java -jar recursive-version/target/benchmarks.jar FastRandomForestBenchmark
+java -jar recursive-version/target/benchmarks.jar NumericDatasetBenchmark
+java -jar recursive-version/target/benchmarks.jar NominalDatasetBenchmark
 echo "Benchmarking the loop version..."
-java -jar loop-version/target/benchmarks.jar FastRandomForestBenchmark
+java -jar loop-version/target/benchmarks.jar NumericDatasetBenchmark
+java -jar loop-version/target/benchmarks.jar NominalDatasetBenchmark
