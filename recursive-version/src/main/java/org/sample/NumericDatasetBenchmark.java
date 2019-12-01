@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class NumericDatasetBenchmark extends FastRandomForestBenchmark {
 
-    protected Instances generateInstances(int n) {
+    private Instances generateInstances(int n) {
         List<Attribute> attributes = Arrays.asList(new Attribute("attr1"),
                                                    new Attribute("attr2"),
                                                    new Attribute("attr3"),
@@ -39,6 +39,16 @@ public class NumericDatasetBenchmark extends FastRandomForestBenchmark {
             instances.add(instance);
         }
         return instances;
+    }
+
+    @Override
+    protected Instances getTrainingData() {
+        return generateInstances(1_000_000);
+    }
+
+    @Override
+    protected Instances getTestingData() {
+        return generateInstances(5_000_000);
     }
 
 }

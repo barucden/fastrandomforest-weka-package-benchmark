@@ -30,9 +30,6 @@ public abstract class FastRandomForestBenchmark {
         }
     }
 
-    private static final int TRAINING_SIZE = 1_000_000;
-    private static final int TESTING_SIZE = 5_000_000;
-
     private Instances testData;
     private FastRandomForest trainedModel;
 
@@ -40,9 +37,9 @@ public abstract class FastRandomForestBenchmark {
     public void setup() throws Exception {
         trainedModel = new FastRandomForest();
         trainedModel.setNumTrees(10);
-        trainedModel.buildClassifier(generateInstances(TRAINING_SIZE));
+        trainedModel.buildClassifier(getTrainingData());
 
-        testData = generateInstances(TESTING_SIZE);
+        testData = getTestingData();
     }
 
     @Benchmark
@@ -59,6 +56,7 @@ public abstract class FastRandomForestBenchmark {
         }
     }
 
-    protected abstract Instances generateInstances(int n);
+    protected abstract Instances getTrainingData();
+    protected abstract Instances getTestingData();
 
 }
